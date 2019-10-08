@@ -1,34 +1,6 @@
 import os
 import json
 
-# class CommonConfig(object):
-#     """
-#     Default configuration class.
-#     """
-#     DEBUG = False
-#     CSRF_ENABLED = True
-#     SECRET = os.getenv('SECRET', os.urandom(24))
-#     BUNDLE_ERRORS = True
-
-# class DevelopmentConfig(CommonConfig):
-#     """
-#     Configurations for Development.
-#     """
-#     DEBUG = True
-
-# class ProductionConfig(CommonConfig):
-#     """
-#     Configurations for Production.
-#     """
-#     DEBUG = False
-#     TESTING = False
-
-
-# app_config = dict(
-#     development=DevelopmentConfig,
-#     production=ProductionConfig,
-# )
-
 
 def get_config(config_names):
     """
