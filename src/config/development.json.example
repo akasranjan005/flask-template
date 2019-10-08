@@ -1,0 +1,7 @@
+{
+    "ENV": "development",
+    "DEBUG": true,
+    "CSRF_ENABLED": true,
+    "SECRET": "MY_SECRET_KEY",
+    "BUNDLE_ERRORS": true
+}
