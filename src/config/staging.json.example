@@ -1,0 +1,4 @@
+{
+    "ENV": "staging",
+    "DEBUG": true
+}
