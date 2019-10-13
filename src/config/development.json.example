@@ -3,5 +3,8 @@
     "DEBUG": true,
     "CSRF_ENABLED": true,
     "SECRET": "MY_SECRET_KEY",
-    "BUNDLE_ERRORS": true
+    "BUNDLE_ERRORS": true,
+    "GOOGLE_OAUTH_CLIENT_ID":"123452-63456789234567v.apps.googleusercontent.com",
+    "GOOGLE_OAUTH_CLIENT_SECRET":"4rg7uj0p45tyj-oj"
+
 }
