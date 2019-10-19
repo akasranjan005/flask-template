@@ -1,12 +1,17 @@
-from flask import redirect, url_for, make_response, jsonify
-from flask_restful import Resource
+from functools import wraps
+from flask import redirect, url_for
 from flask_dance.contrib.google import google
 
 
-class Auth(Resource):
-    def get(self):
+def auth(f):
+    '''
+    You can use this decorator for endpoints that reauire authentification with OAuth.
+    Example of usage you can see in auth_example.py
+    '''
+    @wraps(f)
+    def wrapper(*args, **kwargs):
         if not google.authorized:
             return redirect(url_for("google.login"))
-        resp = google.get("/oauth2/v1/userinfo")
-        assert resp.ok, resp.text
-        return make_response(jsonify({'status': 'Success'}))
+        return f(*args, **kwargs)
+    return wrapper
+

@@ -3,9 +3,9 @@ import os
 from flask import Flask
 
 from app import create_app
-from auth.google import register_blueprint
+from middleware.auth.google import register_blueprint
 from routes.hello_world import Welcome
-from routes.auth import Auth
+from routes.auth_example import Auth
 
 config_name = os.getenv('ENV', 'development')
 api, app = create_app(config_name)
