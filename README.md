@@ -4,6 +4,7 @@ generic flask template with important hackathon components
 
 ## Directory Structure
 
+```
 ├── Dockerfile
 ├── LICENSE
 ├── README.md
@@ -24,6 +25,7 @@ generic flask template with important hackathon components
 │   └── utils
 │       └── __init__.py
 └── supervisord.conf
+```
 
 ## Contribution Guide
 
